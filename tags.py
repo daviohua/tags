@@ -1,0 +1,48 @@
+import time,tkinter,turtle
+def print_slow(str):
+    for letter in str:
+        print(letter, end='')
+        time.sleep(.05)
+sleep = 0.75
+print_slow("Welcome to Totally Average Game Show! ")
+time.sleep(sleep)
+print()
+print_slow("I'm Saysar Flickmin and today on the show we have:")
+time.sleep(sleep)
+print()
+name = input('What is your name?')
+time.sleep(sleep)
+print()
+print_slow('*You enter the studio to applause*')
+time.sleep(sleep)
+print()
+print_slow("Saysar: Hello %s! Welcome to the studio! So, where do you hail from?" % (name,))
+time.sleep(sleep)
+print()
+loc = input('Where do you live?')
+time.sleep(sleep)
+print()
+print_slow("You: England is my city.")
+time.sleep(sleep)
+print()
+print_slow("*laughing in the audience*") 
+time.sleep(sleep)
+print()
+print_slow("You: No, I'm really from %s." % (loc))
+time.sleep(sleep)
+print()
+print_slow("Saysar: Okay then %s from %s. You know how this works? ")
+yn1 = str(input("Y/N"))
+time.sleep(sleep)
+print()
+if yn1 == 'n' or 'N':
+  print_slow("Saysar: I ask you a multiple choice question, and the you answer 1,2 or 3. Okay?")
+  time.sleep(sleep)
+  print()
+  print_slow("You: Okay.")
+elif yn1 != 'Y' or 'y':
+  time.sleep(sleep)
+print()
+print_slow("Saysar: You know how this works?")
+  
+  
